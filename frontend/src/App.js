@@ -123,9 +123,7 @@ const [products,
 
 useEffect(() => {
 
-  fetch(
-    "http://localhost:5000/api/products"
-  )
+  fetch("https://shopping-app-ghpk.onrender.com/api/products")
 
     .then((res) =>
       res.json()
