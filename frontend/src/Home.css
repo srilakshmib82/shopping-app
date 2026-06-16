@@ -1,0 +1,383 @@
+/* Home.css */
+
+.home-container {
+
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      135deg,
+      #04111f,
+      #00142b
+    );
+
+  padding: 50px;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero-section {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 60px;
+
+  margin-bottom: 80px;
+
+  flex-wrap: wrap;
+}
+
+.hero-left {
+
+  flex: 1;
+}
+
+.hero-left h1 {
+
+  font-size: 75px;
+
+  color: white;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+.hero-left span {
+
+  color: #ffd700;
+}
+
+.hero-left p {
+
+  font-size: 24px;
+
+  color: #d1d5db;
+
+  margin-bottom: 35px;
+
+  max-width: 650px;
+
+  line-height: 1.7;
+}
+
+/* BUTTON */
+
+.shop-btn {
+
+  background: #ffd700;
+
+  border: none;
+
+  padding: 18px 42px;
+
+  border-radius: 999px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+
+  transform: scale(1.06);
+
+  background: #ffea4d;
+}
+
+/* HERO IMAGE */
+
+.hero-right {
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.hero-right img {
+
+  width: 100%;
+
+  max-width: 520px;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 10px 35px rgba(0,0,0,0.35);
+}
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.features-section {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(240px, 1fr)
+    );
+
+  gap: 28px;
+
+  margin-bottom: 80px;
+}
+
+.feature-card {
+
+  background: #1b2b47;
+
+  color: white;
+
+  padding: 35px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+
+  transform: translateY(-8px);
+}
+
+.feature-card h3 {
+
+  margin: 18px 0;
+
+  font-size: 28px;
+}
+
+.feature-card p {
+
+  color: #d1d5db;
+
+  font-size: 18px;
+}
+
+/* ========================= */
+/* CATEGORY */
+/* ========================= */
+
+.category-section h2 {
+
+  text-align: center;
+
+  font-size: 52px;
+
+  color: white;
+
+  margin-bottom: 40px;
+}
+
+.category-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
+
+  gap: 30px;
+}
+
+.category-card {
+
+  background: #243b6b;
+
+  color: white;
+
+  padding: 45px 20px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  font-size: 60px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.category-card p {
+
+  margin-top: 18px;
+
+  font-size: 24px;
+}
+
+.category-card:hover {
+
+  transform: translateY(-8px);
+
+  background: #2563eb;
+}
+
+/* ========================= */
+/* LIGHT MODE */
+/* ========================= */
+
+.light-theme .home-container {
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #dbeafe
+    );
+}
+
+.light-theme .hero-left h1 {
+
+  color: #111827;
+}
+
+.light-theme .hero-left p {
+
+  color: #374151;
+}
+
+.light-theme .feature-card {
+
+  background: white;
+
+  color: #111827;
+}
+
+.light-theme .feature-card p {
+
+  color: #4b5563;
+}
+
+.light-theme .category-section h2 {
+
+  color: #111827;
+}
+
+.light-theme .category-card {
+
+  background: white;
+
+  color: #111827;
+}
+
+.light-theme .category-card:hover {
+
+  background: #2563eb;
+
+  color: white;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .hero-left h1 {
+
+    font-size: 58px;
+  }
+
+  .hero-left p {
+
+    font-size: 20px;
+  }
+
+  .category-section h2 {
+
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .home-container {
+
+    padding: 25px;
+  }
+
+  .hero-section {
+
+    flex-direction: column;
+  }
+
+  .hero-left h1 {
+
+    font-size: 42px;
+  }
+
+  .hero-left p {
+
+    font-size: 18px;
+  }
+
+  .hero-right img {
+
+    max-width: 100%;
+  }
+
+  .category-section h2 {
+
+    font-size: 34px;
+  }
+}
+.category-card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.category-card {
+  background: #263b6d;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  background: #355dcc;
+}
+
+.category-card p {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.category-card {
+  font-size: 60px;
+}

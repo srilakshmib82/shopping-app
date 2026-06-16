@@ -1,0 +1,493 @@
+/* Admin.css */
+
+.analytics-container {
+  min-height: 100vh;
+  padding: 50px 35px;
+  background: linear-gradient(135deg, #04111f, #00152f);
+}
+
+/* LIGHT MODE */
+
+.light-theme .analytics-container {
+  background: linear-gradient(135deg, #eef4ff, #dbeafe);
+}
+
+/* TITLE */
+
+.analytics-title {
+  text-align: center;
+
+  font-size: 58px;
+
+  font-weight: 800;
+
+  margin-bottom: 55px;
+
+  color: white;
+
+  letter-spacing: 1px;
+}
+
+/* LIGHT MODE TITLE */
+
+.light-theme .analytics-title {
+  color: #111827;
+}
+
+/* GRID */
+
+.analytics-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+
+  gap: 25px;
+}
+
+/* CARD */
+
+.analytics-card {
+
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  height: 250px;
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+  color: white;
+}
+
+/* HOVER */
+
+.analytics-card:hover {
+
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* GLOW EFFECT */
+
+.analytics-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+
+  height: 170px;
+
+  top: -70px;
+
+  right: -70px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ICON */
+
+.analytics-icon {
+
+  font-size: 46px;
+
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+}
+
+/* CARD TITLE */
+
+.analytics-card h2 {
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  margin-top: 10px;
+
+  margin-bottom: 20px;
+
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+
+  min-height: 55px;
+}
+
+/* VALUE */
+
+.analytics-card p {
+
+  font-size: 56px;
+
+  font-weight: 800;
+
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+}
+
+/* ========================= */
+/* CARD COLORS */
+/* ========================= */
+
+.products-card {
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.cart-card {
+
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.wishlist-card {
+
+  background: linear-gradient(135deg, #ec4899, #db2777);
+}
+
+.orders-card {
+
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.revenue-card {
+
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+/* ========================= */
+/* LIGHT MODE */
+/* ========================= */
+
+.light-theme .products-card {
+
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+}
+
+.light-theme .cart-card {
+
+  background: linear-gradient(135deg, #a855f7, #7e22ce);
+}
+
+.light-theme .wishlist-card {
+
+  background: linear-gradient(135deg, #ff4d8d, #db2777);
+}
+
+.light-theme .orders-card {
+
+  background: linear-gradient(135deg, #fb923c, #ea580c);
+}
+
+.light-theme .revenue-card {
+
+  background: linear-gradient(135deg, #34d399, #10b981);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1400px) {
+
+  .analytics-grid {
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+
+  .analytics-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .analytics-container {
+
+    padding: 30px 18px;
+  }
+
+  .analytics-title {
+
+    font-size: 38px;
+
+    margin-bottom: 35px;
+  }
+
+  .analytics-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-card {
+
+    height: 220px;
+  }
+
+  .analytics-card p {
+
+    font-size: 46px;
+  }
+}
+/* ========================= */
+/* PRODUCT MANAGEMENT */
+/* ========================= */
+
+.manage-products {
+
+  margin-top: 70px;
+}
+
+.manage-products h2 {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  margin-bottom: 35px;
+
+  color: white;
+}
+
+.light-theme .manage-products h2 {
+
+  color: #111827;
+}
+
+.manage-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(260px, 1fr)
+    );
+
+  gap: 25px;
+}
+
+.manage-card {
+
+  background: #1b2b47;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.manage-card:hover {
+
+  transform: translateY(-5px);
+}
+
+.manage-card img {
+
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+
+.manage-card h3 {
+
+  color: white;
+
+  margin: 15px 0;
+}
+
+.manage-card p {
+
+  color: #ffd700;
+
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+
+  width: 100%;
+
+  border: none;
+
+  background: #ef4444;
+
+  color: white;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+
+  background: #dc2626;
+}
+
+/* LIGHT MODE */
+
+.light-theme .manage-card {
+
+  background: white;
+}
+
+.light-theme .manage-card h3 {
+
+  color: #111827;
+}
+
+.light-theme .manage-card p {
+
+  color: #2563eb;
+}
+/* EDIT */
+
+.edit-btn {
+
+  width: 100%;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  margin-bottom: 10px;
+
+  font-weight: bold;
+}
+
+.edit-form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+}
+
+.edit-form input {
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+}
+
+.save-btn {
+
+  border: none;
+
+  background: #10b981;
+
+  color: white;
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+/* CHARTS */
+
+.charts-section {
+
+  margin-top: 80px;
+}
+
+.charts-section h2 {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  margin-bottom: 35px;
+
+  color: white;
+}
+
+.light-theme .charts-section h2 {
+
+  color: #111827;
+}
+
+.charts-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(450px, 1fr)
+    );
+
+  gap: 30px;
+}
+
+.chart-card {
+
+  background: #1b2b47;
+
+  border-radius: 24px;
+
+  padding: 25px;
+}
+
+.light-theme .chart-card {
+
+  background: white;
+}

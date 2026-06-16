@@ -1,0 +1,55 @@
+.add-product-container {
+
+  max-width: 600px;
+
+  margin: 50px auto;
+
+  padding: 30px;
+
+  background: #1b2b47;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.add-product-container h1 {
+
+  color: white;
+
+  text-align: center;
+}
+
+.add-product-container input {
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+}
+
+.add-product-container button {
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #10b981;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}

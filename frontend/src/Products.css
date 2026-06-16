@@ -1,0 +1,540 @@
+/* Products.css */
+
+.products-container {
+
+  min-height: 100vh;
+
+  padding: 50px 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #04111f,
+      #00152f
+    );
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.products-title {
+
+  text-align: center;
+
+  font-size: 64px;
+
+  font-weight: 900;
+
+  color: white;
+
+  margin-bottom: 40px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-wrapper {
+
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: 0 auto 40px;
+
+  position: relative;
+}
+
+.search-box {
+
+  width: 100%;
+
+  padding: 18px 24px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 18px;
+
+  font-size: 18px;
+
+  background: white;
+
+  color: #111827;
+
+  box-shadow:
+    0 10px 25px
+    rgba(0,0,0,0.2);
+}
+
+/* SEARCH SUGGESTIONS */
+
+.search-suggestions {
+
+  position: absolute;
+
+  width: 100%;
+
+  top: 75px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  z-index: 100;
+}
+
+.suggestion-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 14px;
+
+  transition: 0.3s;
+}
+
+.suggestion-item:hover {
+
+  background: #f3f4f6;
+}
+
+.suggestion-item img {
+
+  width: 55px;
+
+  height: 55px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.suggestion-item span {
+
+  color: #111827;
+
+  font-weight: 600;
+}
+
+.search-suggestions a {
+
+  text-decoration: none;
+}
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+.filter-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+  margin-bottom: 45px;
+}
+
+.filter-buttons button {
+
+  border: none;
+
+  background: #ffd700;
+
+  color: black;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+
+  transform: translateY(-3px);
+
+  background: #ffea4d;
+}
+
+/* =========================
+   PRODUCTS GRID
+========================= */
+
+.products-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap: 35px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #1e3a8a,
+      #273c75
+    );
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  padding: 18px;
+
+  transition: 0.35s;
+
+  position: relative;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0,0,0,0.25);
+}
+
+.product-card:hover {
+
+  transform:
+    translateY(-10px)
+    scale(1.02);
+}
+
+/* GLOW */
+
+.product-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  top: -70px;
+  right: -70px;
+
+  background:
+    rgba(255,255,255,0.08);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.product-image {
+
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.product-info {
+
+  color: white;
+}
+
+.product-name {
+
+  font-size: 34px;
+
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.product-price {
+
+  font-size: 34px;
+
+  font-weight: 900;
+
+  color: #ffd700;
+
+  margin-bottom: 10px;
+}
+
+.product-stock {
+
+  font-size: 18px;
+
+  margin-bottom: 8px;
+
+  color: #dbeafe;
+}
+
+.discount-text {
+
+  color: #86efac;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  margin-bottom: 22px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.product-buttons {
+
+  display: flex;
+
+  gap: 14px;
+
+  margin-bottom: 14px;
+}
+
+.cart-btn,
+.wishlist-btn,
+.details-btn {
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  font-weight: 700;
+}
+
+/* CART */
+
+.cart-btn {
+
+  flex: 1;
+
+  background: #ffd700;
+
+  color: black;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+}
+
+.cart-btn:hover {
+
+  background: #ffea4d;
+
+  transform: scale(1.03);
+}
+
+/* WISHLIST */
+
+.wishlist-btn {
+
+  flex: 1;
+
+  background: #ec4899;
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+}
+
+.wishlist-btn:hover {
+
+  background: #db2777;
+
+  transform: scale(1.03);
+}
+
+/* DETAILS */
+
+.details-btn {
+
+  width: 100%;
+
+  background: white;
+
+  color: #111827;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+}
+
+.details-btn:hover {
+
+  background: #dbeafe;
+
+  transform: scale(1.02);
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.no-products {
+
+  text-align: center;
+
+  margin-top: 80px;
+
+  color: white;
+}
+
+.no-products h2 {
+
+  font-size: 38px;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+.light-theme .products-container {
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef4ff,
+      #dbeafe
+    );
+}
+
+.light-theme .products-title {
+
+  color: #111827;
+}
+
+.light-theme .product-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #60a5fa,
+      #2563eb
+    );
+}
+
+.light-theme .search-box {
+
+  background: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .products-container {
+
+    padding: 30px 18px;
+  }
+
+  .products-title {
+
+    font-size: 42px;
+  }
+
+  .product-name {
+
+    font-size: 28px;
+  }
+
+  .product-price {
+
+    font-size: 28px;
+  }
+
+  .product-buttons {
+
+    flex-direction: column;
+  }
+
+  .product-image {
+
+    height: 220px;
+  }
+}
+.sort-container {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.sort-container select {
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ccc;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+.sort-container {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin: 20px 0;
+}
+
+.sort-container select {
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  border: 2px solid #ddd;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
